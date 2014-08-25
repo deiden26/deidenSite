@@ -3,31 +3,29 @@ html
 	head
 		title= title
 		link(rel='stylesheet', href='/css/stylesheets/style.css')
-		link(rel='stylesheet', href='/css/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='/css/stylesheets/foundation.css')
+		link(rel='stylesheet', href='/css/stylesheets/normalize.css')
 
-		script(src="/javascripts/jquery_min.js")
-		script(src="/javascripts/bootstrap.js")
+		script(src="/javascripts/Foundation/foundation.min.js")
 	body
 		// Navigation Bar to be on all pages
-		nav(class="navbar navbar-inverse navbar-fixed-top" role="navigation")
-			div(class="container-fluid")
-				div(class="navbar-header")
-					button(type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle")
-						span(class="sr-only") Toggle Navigation
-						span(class="icon-bar")
-						span(class="icon-bar")
-						span(class="icon-bar")
-					a(class="navbar-brand" href="/") Danny
-				div(id="navbarCollapse" class="collapse navbar-collapse navbar-right")
-					ul(class="nav navbar-nav")
-						li(class="active")
-							a(href="/") About
-						li
-							a(href="/") Skills
-						li
-							a(href="/") Experience
-						li
-							a(href="/") Testimonials
-						li
-							a(href="/") Contact
+		nav(class="top-bar" data-topbar role="navigation")
+			ul(class="title-area")
+				li(class="name")
+					h1
+						a(href="#") Danny
+				li(class="toggle-topbar menu-icon")
+					a(href="#")
+			section(class="top-bar-section")
+				ul(class="right")
+					li(class="active")
+						a(href="#") About
+					li
+						a(href="#") Skills
+					li
+						a(href="#") Experience
+					li
+						a(href="#") Testimonials
+					li
+						a(href="#") Contact
 		block content
