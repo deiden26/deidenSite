@@ -4,6 +4,7 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var stylus = require('stylus');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -14,9 +15,16 @@ var server = app.listen(3000, function() {
     console.log('Listening on port %d', server.address().port);
 });
 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+//Stylus setup
+app.use(stylus.middleware({
+    src: __dirname + '/public/stylus',
+    dest: __dirname + '/public/css'
+}));
 
 app.use(favicon());
 app.use(logger('dev'));
