@@ -1,3 +1,6 @@
+@import "/css/stylesheets/foundation.css";
+@import "/css/stylesheets/normalize.css";
 body {
-  padding: 50px;
+  background-color: #272822;
+  padding-top: 50px;
 }
