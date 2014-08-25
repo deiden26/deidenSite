@@ -8,9 +8,13 @@ html(class="no-js" lang="en")
 		link(rel='stylesheet', href='/css/stylesheets/style.css')
 
 		script(src="/javascripts/Foundation/modernizr.js")
-		script(src="/javascripts/Foundation/jquery.js")
-		script(src="/javascripts/Foundation/foundation.min.js")
 	body
+		script(src="/javascripts/Foundation/jquery.js")
+		script(src="/javascripts/Foundation/fastclick.js")
+		script(src="/javascripts/Foundation/foundation.min.js")
+		script(type='text/javascript')
+			$(document).foundation();
+
 		// Navigation Bar to be on all pages
 		div(class="fixed")
 			nav(class="top-bar" data-topbar role="navigation")
