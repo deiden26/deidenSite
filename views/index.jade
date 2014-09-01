@@ -1,5 +1,51 @@
 extends layout
 
 block content
-	h1= title
-	p Welcome to #{title}
+	div(class="fixed")
+		nav(class="top-bar" data-topbar role="navigation")
+			ul(class="title-area")
+				li(class="name")
+					h1
+						a(href="#") Danny
+				li(class="toggle-topbar menu-icon")
+					a(href="#")
+						span
+			section(class="top-bar-section")
+				ul(class="right")
+					li(class="active")
+						a(href="#") About
+					li
+						a(href="#") Skills
+					li
+						a(href="#") Experience
+					li
+						a(href="#") Testimonials
+					li
+						a(href="#") Contact
+	// Top Image
+	img(src="/images/Wave_of_the_Future.jpg" class="top-image")
+	div(class="row about")
+		div(class="large-12 column")
+			h3 About
+		div(class="small-4 medium-2 large-2 column")
+			img(src="/images/dannypic2.jpg" class="dannypic")
+		div(class="small-8 medium-10 large-10 column")
+			p 
+			|Great things happen at the intersection of technology and creativity,
+			| and that is where I like to center my thinking. I strive for a deep
+			| understanding of both computers and people. During my undergraduate
+			| career, I have taken classes in computer science, psychology, marketing,
+			| and the arts. I have made a great effort to develop whole-brain thinking,
+			| and I would like to put this unique mindset to work for you.
+	div(class="row skills")
+		div(class="large-12 column")
+			h3 Skills
+	div(class="row experience")
+		div(class="large-12 column")
+			h3 Experience
+	div(class="row testimonials")
+		div(class="large-12 column")
+			h3 Testimonials
+	div(class="row contact")
+		div(class="large-12 column")
+			h3 Contact
