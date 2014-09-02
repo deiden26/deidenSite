@@ -11,22 +11,22 @@ body {
   height: 100%;
   width: 100%;
 }
-.about {
+#about {
   background-color: #4c4c49;
 }
 .dannypic {
   width: 100%;
   padding-bottom: 20px;
 }
-.skills {
+#skills {
   background-color: #272822;
 }
-.experience {
+#experience {
   background-color: #4c4c49;
 }
-.testimonials {
+#testimonials {
   background-color: #272822;
 }
-.contact {
+#contact {
   background-color: #4c4c49;
 }
