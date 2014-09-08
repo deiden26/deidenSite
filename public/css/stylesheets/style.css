@@ -30,6 +30,15 @@ body {
 #skills {
   background-color: #272822;
 }
+.development {
+  color: #6985ff;
+}
+.design {
+  color: #91cc5d;
+}
+.product-management {
+  color: #ff5925;
+}
 #experience {
   background-color: #4c4c49;
 }
