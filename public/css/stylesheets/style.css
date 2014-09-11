@@ -1,5 +1,6 @@
 @import "/css/stylesheets/foundation.css";
 @import "/css/stylesheets/normalize.css";
+@import "/css/stylesheets/font-awesome.css";
 body {
   background-color: #272822;
 }
@@ -51,4 +52,15 @@ body {
 }
 #contact {
   background-color: #4c4c49;
+}
+.contact-icon {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #e9e9e9;
+}
+.contact-icon:hover {
+  color: #fff;
 }

@@ -1,5 +1,14 @@
 @import "/css/stylesheets/foundation.css"
 @import "/css/stylesheets/normalize.css"
+@import "/css/stylesheets/font-awesome.css"
+
+//Mixins
+transition(val)
+	-webkit-transition: all val ease;
+	-moz-transition: all val ease;
+	-ms-transition: all val ease;
+	-o-transition: all val ease;
+	transition: all val ease;
 
 // Universal
 body
@@ -55,3 +64,8 @@ body
 // Contact
 #contact
 	background-color #4c4c49
+.contact-icon
+	transition(0.25s)
+	color #e9e9e9
+	&:hover
+		color #ffffff
