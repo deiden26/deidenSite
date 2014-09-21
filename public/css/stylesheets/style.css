@@ -34,18 +34,36 @@ body {
 }
 .development {
   color: #6985ff;
+  text-align: center;
 }
 .design {
   color: #91cc5d;
+  text-align: center;
 }
 .product-management {
   color: #ff5925;
+  text-align: center;
 }
 #experience {
   background-color: #4c4c49;
 }
 .app-icon {
   width: 30%;
+}
+.divit-content,
+.shindg-content {
+  display: none;
+}
+.experience-icon {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  color: #e9e9e9;
+}
+.experience-icon:hover {
+  color: #fff;
 }
 #testimonials {
   background-color: #272822;
