@@ -4,6 +4,9 @@
 body {
   background-color: #272822;
 }
+p {
+  font-size: 1.1em;
+}
 .text {
   padding-bottom: 20px;
   padding-left: 15px;
@@ -73,15 +76,14 @@ body {
   padding-bottom: 20px;
 }
 .quotation-mark {
-  float: left;
-  padding-right: 10px;
-  color: #a6a4a5;
+  color: #3b3b3b;
 }
 .quotation-content {
-  float: left;
+  text-indent: 40px;
+  margin-top: -20px;
 }
 .quotation-source {
-  color: #a6a4a5;
+  color: #808080;
 }
 #contact {
   background-color: #4c4c49;
