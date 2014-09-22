@@ -39,10 +39,6 @@ a:hover {
 #about {
   background-color: #383836;
 }
-.danny-pic {
-  width: 100%;
-  padding-bottom: 20px;
-}
 #skills {
   background-color: #272822;
 }
@@ -71,10 +67,6 @@ a:hover {
 }
 #testimonials {
   background-color: #272822;
-}
-.testimonial-pic {
-  width: 100%;
-  padding-bottom: 20px;
 }
 .quotation-mark {
   color: #3b3b3b;
