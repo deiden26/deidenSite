@@ -70,18 +70,42 @@ a:hover {
 .shindg-content {
   display: none;
 }
+.roles-title {
+  color: #6985ff;
+}
+.languages-title {
+  color: #91cc5d;
+}
+.platforms-title {
+  color: #ff5925;
+}
 #testimonials {
   background-color: #272822;
-}
-.quotation-mark {
-  color: #3b3b3b;
 }
 .quotation-content {
   text-indent: 40px;
   margin-top: -20px;
 }
 .quotation-source {
-  color: #808080;
+  color: #7e8080;
+}
+.blue-quotation-mark {
+  color: #6985ff;
+}
+.blue-quotation-source {
+  color: #6985ff;
+}
+.green-quotation-mark {
+  color: #91cc5d;
+}
+.green-quotation-source {
+  color: #91cc5d;
+}
+.red-quotation-mark {
+  color: #ff5925;
+}
+.red-quotation-source {
+  color: #ff5925;
 }
 #contact {
   background-color: #383836;
