@@ -15,7 +15,12 @@ a {
   transition: all 0.5s ease;
   color: #999;
 }
-a:hover {
+a:visited,
+a:link {
+  color: #999;
+}
+a:hover,
+a:active {
   color: #fff;
 }
 .text {
