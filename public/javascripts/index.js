@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", function() {
+	$('.project-carousel').slick({
+		adaptiveHeight: true,
+	});
+});
+
 function scrollTo(target, closeNav){
 	//Scroll with animation
 	$('html, body').animate({
@@ -7,6 +13,7 @@ function scrollTo(target, closeNav){
 	if(closeNav)
 		Foundation.libs.topbar.toggle();
 }
+
 function showExperienceContent(target){
 	//Show or hide the content
 	$("."+target+"-content").slideToggle(400);

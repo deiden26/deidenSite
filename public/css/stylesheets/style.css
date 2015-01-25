@@ -1,6 +1,7 @@
 @import "/css/stylesheets/foundation.css";
 @import "/css/stylesheets/normalize.css";
 @import "/css/stylesheets/font-awesome.css";
+@import "/css/stylesheets/slick.css";
 body {
   background-color: #272822;
 }
@@ -67,9 +68,15 @@ a:active {
 #experience {
   background-color: #383836;
 }
+.project-carousel {
+  padding-left: 20%;
+  padding-right: 20%;
+}
 .app-icon {
   width: 30%;
   padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .divit-content,
 .shindg-content {
@@ -83,6 +90,23 @@ a:active {
 }
 .platforms-title {
   color: #ff5925;
+}
+.slick-prev,
+.slick-next {
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 50px;
+}
+@font-face {
+  font-family: "slick";
+  src: url("../../fonts/slick/slick.eot");
+  src: url("../../fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("../../fonts/slick/slick.woff") format("woff"), url("../../fonts/slick/slick.ttf") format("truetype"), url("../../fonts/slick/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 #testimonials {
   background-color: #272822;
