@@ -83,8 +83,12 @@ a
 .slick-prev, .slick-next
 	height 50px
 	&:before
+		transition(0.5s)
 		font-size 50px
 		font-family FontAwesome
+		color #999999
+	&:hover:before, &:focus:before
+		color #ffffff
 .slick-prev:before
 		content "\f104"
 .slick-next:before
