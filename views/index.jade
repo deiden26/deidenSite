@@ -97,31 +97,6 @@ block content
 									a(href="http://www.divitapp.com")
 										span(class="fa fa-laptop fa-2x fa-fw")
 										p() Web 
-						div(class="text-center")
-							a(onclick="showExperienceContent('divit')")
-								span(class="fa fa-angle-down  fa-3x" id="divit-arrow")
-						div(class="divit-content")
-							h4(class="roles-title") Roles
-							ul
-								li Founder
-								ali Programmer
-								li Designer
-								li Product Manager
-							h4(class="languages-title") Languages Used
-							ul
-								li HTML
-								li CSS
-								li JavaScript
-								li Objective C
-							h4(class="platforms-title") Platforms & Strategies Used
-							ul
-								li node.js
-								li Parse
-								li Mixpanel
-								li Heroku Deployment
-								li Git & Github
-								li Pixelmater & Gimp
-								li Agile Development
 					div()
 						div(class="text-center")
 							h2 Shindg
@@ -139,25 +114,48 @@ block content
 								a(href="https://itunes.apple.com/us/app/shindg/id854008976?mt=8")
 									span(class="fa fa-apple fa-2x fa-fw")
 									p() Apple App Store
-						div(class="text-center")
-							a(onclick="showExperienceContent('shindg')")
-								span(class="fa fa-angle-down fa-3x" id="shindg-arrow")
-						div(class="shindg-content")
-							h4(class="roles-title") Roles
-							ul
-								li Founder
-								li Programmer
-								li Designer
-								li Product Manager
-							h4(class="languages-title") Languages Used
-							ul
-								li Objective C
-							h4(class="platforms-title") Platforms & Strategies Used
-							ul
-								li Parse
-								li Git & Github
-								li Pixelmater & Gimp
-								li Agile Development
+				div(class="text-center")
+					a(onclick="toggleExperienceContent()")
+						p(class="content-button-text") More Info
+						span(class="fa fa-angle-double-down fa-3x" id="content-arrow")
+				div(class="divit-content")
+					h4(class="roles-title") Roles
+					ul
+						li Founder
+						li Programmer
+						li Designer
+						li Product Manager
+					h4(class="languages-title") Languages Used
+					ul
+						li HTML
+						li CSS
+						li JavaScript
+						li Objective C
+					h4(class="platforms-title") Platforms & Strategies Used
+					ul
+						li node.js
+						li Parse
+						li Mixpanel
+						li Heroku Deployment
+						li Git & Github
+						li Pixelmater & Gimp
+						li Agile Development
+				div(class="shindg-content")
+					h4(class="roles-title") Roles
+					ul
+						li Founder
+						li Programmer
+						li Designer
+						li Product Manager
+					h4(class="languages-title") Languages Used
+					ul
+						li Objective C
+					h4(class="platforms-title") Platforms & Strategies Used
+					ul
+						li Parse
+						li Git & Github
+						li Pixelmater & Gimp
+						li Agile Development
 	section(id="testimonials")
 		div(class="row")
 			div(class="large-12 column")

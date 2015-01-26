@@ -43,8 +43,7 @@ a
 // Top
 .top-image
 	width 100%
-	max-height 100%
-	min-height 50%
+	max-height 80%
 
 // About
 #about
@@ -66,8 +65,8 @@ a
 #experience
 	background-color #383836
 .project-carousel
-	padding-left 20%
-	padding-right 20%
+	margin-left 20px
+	margin-right 20px
 .app-icon
 	width 30%
 	padding-bottom 25px
@@ -83,16 +82,23 @@ a
 	color #FF5925
 .slick-prev, .slick-next
 	height 50px
-	width 50px
-	font-size 50px
 	&:before
 		font-size 50px
+		font-family FontAwesome
+.slick-prev:before
+		content "\f104"
+.slick-next:before
+		content "\f105"
+
 @font-face 
 	font-family: "slick";
 	src: url("../../fonts/slick/slick.eot");
 	src: url("../../fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("../../fonts/slick/slick.woff") format("woff"), url("../../fonts/slick/slick.ttf") format("truetype"), url("../../fonts/slick/slick.svg#slick") format("svg");
 	font-weight: normal;
 	font-style: normal; 
+
+.content-button-text
+	margin-bottom 0px
 
 // Testimonials
 #testimonials
