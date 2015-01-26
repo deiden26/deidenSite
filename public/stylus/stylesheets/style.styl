@@ -14,6 +14,14 @@ transition(val)
 inset()
 	text-shadow: 1px 1px 1px #666, -1px -1px 1px #111;
 
+//Load slick carousel font
+@font-face 
+	font-family: "slick";
+	src: url("../../fonts/slick/slick.eot");
+	src: url("../../fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("../../fonts/slick/slick.woff") format("woff"), url("../../fonts/slick/slick.ttf") format("truetype"), url("../../fonts/slick/slick.svg#slick") format("svg");
+	font-weight: normal;
+	font-style: normal; 
+
 // Universal
 body
 	background-color #272822
@@ -26,6 +34,13 @@ a
 		color #999999
 	&:hover, &:active
 		color #ffffff
+h3
+	color #ffffff
+	box-shadow 0px 2px 2px -3px #fff, 0px -2px 2px -3px #000 inset
+	padding-left 10px
+	padding-bottom 5px
+	margin-bottom 30px
+	margin-top 30px
 .text
 	padding-bottom 20px
 	padding-left 15px
@@ -90,11 +105,14 @@ a
 	margin-right 20px
 .app-icon
 	width 30%
+	max-width 200px
 	padding-bottom 25px
 	margin-left auto
 	margin-right auto
 .divit-content, .shindg-content
 	display none
+.project-source-button-text
+	margin-bottom 10px
 .roles-title
 	color #6985FF
 .languages-title
@@ -114,14 +132,6 @@ a
 		content "\f104"
 .slick-next:before
 		content "\f105"
-
-@font-face 
-	font-family: "slick";
-	src: url("../../fonts/slick/slick.eot");
-	src: url("../../fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("../../fonts/slick/slick.woff") format("woff"), url("../../fonts/slick/slick.ttf") format("truetype"), url("../../fonts/slick/slick.svg#slick") format("svg");
-	font-weight: normal;
-	font-style: normal; 
-
 .slick-dots
 	margin-left 0
 	margin-right 0
@@ -133,7 +143,6 @@ a
 .slick-dots li.slick-active button:before
 	color #272822
 	opacity 0.6
-
 .content-button-text
 	margin-bottom 0px
 
