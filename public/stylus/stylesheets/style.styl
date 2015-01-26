@@ -75,11 +75,57 @@ h3
 	height 80%
 	padding-right 10px
 	padding-bottom 5px
-
-// Top
+//Top Image
+#top
+	height 100%
 .top-image
-	width 100%
-	max-height 80%
+	background-image:url("../../images/Wave_of_the_Future.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:fixed;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	height:100%;
+	width:100%
+.top-image-mask{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:20px;
+	z-index:2
+}
+
+.top-image-mask:before,.top-image-mask:after{
+	content:' ';
+	display:block;
+	position:absolute;
+	top:0;
+	height:0;
+	border-bottom:20px solid #323230;
+	box-shadow 0px -7px 7px -2px #000
+	z-index:1;
+	width:50%
+}
+
+.top-image-mask:before{
+	border-left:0;
+	border-right:20px solid transparent;
+	padding-right 20px
+	border-bottom:20px solid #323230;
+	box-shadow -20px -7px 7px -2px #000
+	left:0
+}
+
+.top-image-mask:after{
+	right:0;
+	border-right:0;
+	border-left:20px solid transparent
+	box-shadow 20px -7px 7px -2px #000
+}
 
 // About
 #about
