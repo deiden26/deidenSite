@@ -11,6 +11,9 @@ transition(val)
 	-o-transition: all val ease;
 	transition: all val ease;
 
+inset()
+	text-shadow: 1px 1px 1px #666, -1px -1px 1px #111;
+
 // Universal
 body
 	background-color #272822
@@ -29,10 +32,28 @@ a
 	padding-right 15px
 
 //top-bar
+.top-bar {
+    background: #454545;
+}
+
+.top-bar-section li a:not(.button) {
+    background: #454545 !important;   
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: #666 !important;   
+}
+
+.top-bar-section ul li.active > a {
+    background: #666 !important;   
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: #666 !important;   
+}
 .top-bar-bottom-border
-	border-bottom solid
-	border-width 1px
-	border-color #454545
+	box-shadow 0px -1px 7px 1px #000;
+
 .nav-title
 	height 100%
 .nav-logo
@@ -47,7 +68,7 @@ a
 
 // About
 #about
-	background-color #383836
+	background-color #323230
 // Skills
 #skills
 	background-color #272822
@@ -63,7 +84,7 @@ a
 	
 //Experience
 #experience
-	background-color #383836
+	background-color #323230
 .project-carousel
 	margin-left 20px
 	margin-right 20px
@@ -105,7 +126,8 @@ a
 	margin-left 0
 	margin-right 0
 .slick-dots li button:before
-	font-size 8px
+	inset()
+	font-size 10px
 	color #272822
 	opacity 1
 .slick-dots li.slick-active button:before
@@ -138,4 +160,4 @@ a
 
 // Contact
 #contact
-	background-color #383836
+	background-color #323230
