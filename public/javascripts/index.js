@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 	$('.project-carousel').slick({
+		dots: true,
 		onBeforeChange: hideExperienceContent
 	});
 });
