@@ -5,22 +5,19 @@
 
 //Mixins
 transition(val)
-	-webkit-transition: all val ease;
-	-moz-transition: all val ease;
-	-ms-transition: all val ease;
-	-o-transition: all val ease;
-	transition: all val ease;
-
-inset()
-	text-shadow: 1px 1px 1px #666, -1px -1px 1px #111;
+	-webkit-transition all val ease
+	-moz-transition all val ease
+	-ms-transition all val ease
+	-o-transition all val ease
+	transition all val ease
 
 //Load slick carousel font
 @font-face 
-	font-family: "slick";
-	src: url("../../fonts/slick/slick.eot");
-	src: url("../../fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("../../fonts/slick/slick.woff") format("woff"), url("../../fonts/slick/slick.ttf") format("truetype"), url("../../fonts/slick/slick.svg#slick") format("svg");
-	font-weight: normal;
-	font-style: normal; 
+	font-family: "slick"
+	src: url("../../fonts/slick/slick.eot")
+	src: url("../../fonts/slick/slick.eot?#iefix") format("embedded-opentype"), url("../../fonts/slick/slick.woff") format("woff"), url("../../fonts/slick/slick.ttf") format("truetype"), url("../../fonts/slick/slick.svg#slick") format("svg")
+	font-weight: normal
+	font-style: normal 
 
 // Universal
 body
@@ -41,6 +38,10 @@ h3
 	padding-bottom 5px
 	margin-bottom 30px
 	margin-top 30px
+h5
+	color #ffffff
+	font-size 2em
+	text-align center
 .text
 	padding-bottom 20px
 	padding-left 15px
@@ -48,26 +49,26 @@ h3
 
 //top-bar
 .top-bar {
-    background: #454545;
+    background #454545
 }
 
 .top-bar-section li a:not(.button) {
-    background: #454545 !important;   
+    background #454545 !important 
 }
-
 .top-bar-section li a:not(.button):hover {
-    background: #666 !important;   
+    background #666 !important
 }
 
 .top-bar-section ul li.active > a {
-    background: #666 !important;   
+    background #666 !important  
 }
 
 .top-bar-section ul li.active > a:hover {
-    background: #666 !important;   
+    background #666 !important 
 }
+
 .top-bar-bottom-border
-	box-shadow 0px -1px 7px 1px #000;
+	box-shadow 0px -1px 8px 2px #000
 
 .nav-title
 	height 100%
@@ -79,53 +80,60 @@ h3
 #top
 	height 100%
 .top-image
-	background-image:url("../../images/Wave_of_the_Future.jpg");
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center center;
-	background-attachment:fixed;
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:-1;
-	height:100%;
-	width:100%
-.top-image-mask{
-	position:absolute;
-	bottom:0;
-	left:0;
-	width:100%;
-	height:20px;
-	z-index:2
-}
+	display table
+	background-size cover
+	background-repeat no-repeat
+	background-position center center
+	background-attachment fixed
+	position absolute
+	top 0
+	left 0
+	z-index -1
+	height 100%
+	width 100%
+	@media (max-width : 480px)
+		background-image url("../../images/Wave_of_the_Future_Small.jpg")
+	@media (min-width : 481px) and (max-width : 1024px)
+		background-image url("../../images/Wave_of_the_Future_Medium.jpg")
+	@media (min-width : 1025px)
+		background-image url("../../images/Wave_of_the_Future_Large.jpg")
+.top-image-text
+	display table-cell
+	vertical-align middle
+	background-color rgba(#000, 0.5)
+	height 100px
+.top-image-mask
+	position absolute
+	bottom 0
+	left 0
+	width 100%
+	height 20px
+	z-index 2
 
-.top-image-mask:before,.top-image-mask:after{
-	content:' ';
-	display:block;
-	position:absolute;
-	top:0;
-	height:0;
-	border-bottom:20px solid #323230;
+.top-image-mask:before,.top-image-mask:after
+	content ' '
+	display block
+	position absolute
+	top 0
+	height 0
+	border-bottom 20px solid #323230
 	box-shadow 0px -7px 7px -2px #000
-	z-index:1;
-	width:50%
-}
+	z-index 1
+	width 50%
 
-.top-image-mask:before{
-	border-left:0;
-	border-right:20px solid transparent;
+.top-image-mask:before
+	border-left 0
+	border-right 20px solid transparent
 	padding-right 20px
-	border-bottom:20px solid #323230;
+	border-bottom 20px solid #323230
 	box-shadow -20px -7px 7px -2px #000
-	left:0
-}
+	left 0
 
-.top-image-mask:after{
-	right:0;
-	border-right:0;
-	border-left:20px solid transparent
+.top-image-mask:after
+	right 0
+	border-right 0
+	border-left 20px solid transparent
 	box-shadow 20px -7px 7px -2px #000
-}
 
 // About
 #about
@@ -182,7 +190,7 @@ h3
 	margin-left 0
 	margin-right 0
 .slick-dots li button:before
-	inset()
+	text-shadow 1px 1px 1px #666, -1px -1px 1px #111
 	font-size 10px
 	color #272822
 	opacity 1

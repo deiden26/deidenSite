@@ -39,6 +39,11 @@ h3 {
   margin-bottom: 30px;
   margin-top: 30px;
 }
+h5 {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
 .text {
   padding-bottom: 20px;
   padding-left: 15px;
@@ -60,7 +65,7 @@ h3 {
   background: #666 !important;
 }
 .top-bar-bottom-border {
-  box-shadow: 0px -1px 7px 1px #000;
+  box-shadow: 0px -1px 8px 2px #000;
 }
 .nav-title {
   height: 100%;
@@ -74,7 +79,7 @@ h3 {
   height: 100%;
 }
 .top-image {
-  background-image: url("../../images/Wave_of_the_Future.jpg");
+  display: table;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -85,6 +90,27 @@ h3 {
   z-index: -1;
   height: 100%;
   width: 100%;
+}
+@media (max-width: 480px) {
+  .top-image {
+    background-image: url("../../images/Wave_of_the_Future_Small.jpg");
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .top-image {
+    background-image: url("../../images/Wave_of_the_Future_Medium.jpg");
+  }
+}
+@media (min-width: 1025px) {
+  .top-image {
+    background-image: url("../../images/Wave_of_the_Future_Large.jpg");
+  }
+}
+.top-image-text {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgba(0,0,0,0.5);
+  height: 100px;
 }
 .top-image-mask {
   position: absolute;
