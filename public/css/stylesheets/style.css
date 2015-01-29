@@ -300,11 +300,11 @@ h5 {
   text-shadow: 1px 1px 1px #666, -1px -1px 1px #111;
   font-size: 10px;
   color: #272822;
-  opacity: 1;
+  opacity: 0.5;
 }
 .slick-dots li.slick-active button:before {
   color: #272822;
-  opacity: 0.6;
+  opacity: 1;
 }
 .content-button-text {
   margin-bottom: 0px;
