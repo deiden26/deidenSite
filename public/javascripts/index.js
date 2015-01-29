@@ -26,7 +26,7 @@ function toggleExperienceContent(showHide){
 	var contentLabels = ["divit", "shindg", "anser"];
 	var index = $(".project-carousel").slickCurrentSlide();
 	var target = contentLabels[index];
-	var content = $("."+target+"-content");
+	var content = $("#"+target+"-content");
 	var contentButtonText = $(".content-button-text");
 	if (showHide === true && content.is(':visible'))
 		return;
