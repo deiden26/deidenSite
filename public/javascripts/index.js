@@ -4,7 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		onBeforeChange: hideExperienceContent
 	});
 });
-
+window.onscroll = function() {
+	var alphaRaw = 1 - (2.5/window.innerHeight) * window.pageYOffset;
+	var alpha = Math.max(0, alphaRaw);
+	$(".top-image-text").css('opacity', alpha);
+	console.log(alpha);
+};
 function scrollTo(target, closeNav){
 	//Scroll with animation
 	$('html, body').animate({
