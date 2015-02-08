@@ -235,7 +235,7 @@ h5 {
   color: #ff5925;
   text-align: center;
 }
-#experience {
+#projects {
   background-color: #323230;
 }
 .project-carousel {
@@ -249,7 +249,7 @@ h5 {
   margin-left: auto;
   margin-right: auto;
 }
-.experience-content {
+.project-content {
   display: none;
 }
 .project-source-button-text {
@@ -258,7 +258,7 @@ h5 {
 .roles-title {
   color: #6985ff;
 }
-.languages-title {
+.contributions-title {
   color: #91cc5d;
 }
 .platforms-title {
