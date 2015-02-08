@@ -152,7 +152,7 @@ h5 {
     background-image: url("../../images/Wave_of_the_Future_Large.jpg");
   }
 }
-.top-image-text {
+#top-image-text {
   display: table-cell;
   vertical-align: middle;
   background-color: rgba(0,0,0,0.5);
