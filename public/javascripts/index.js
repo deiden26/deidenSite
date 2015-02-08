@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 	$('.project-carousel').slick({
 		dots: true,
+		appendDots: $(".dots-container"),
 		onBeforeChange: hideExperienceContent
 	});
 });
@@ -46,10 +47,10 @@ function toggleExperienceContent(showHide){
 		//Add or remove the up arrow
 		$("#content-arrow").toggleClass("fa fa-angle-double-up fa-3x");
 		//Change test
-		if(contentButtonText.text() === "More Info")
-			contentButtonText.html("Less Info");
+		if(contentButtonText.text() === "Show My Contributions")
+			contentButtonText.html("Hide My Contributions");
 		else
-			contentButtonText.html("More Info");
+			contentButtonText.html("Show My Contributions");
 
 	}
 }

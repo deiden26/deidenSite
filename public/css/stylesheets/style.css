@@ -264,6 +264,14 @@ h5 {
 .platforms-title {
   color: #ff5925;
 }
+.languages-platforms {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0;
+}
+.slick-slider {
+  margin-bottom: 0;
+}
 .slick-prev,
 .slick-next {
   height: 50px;
@@ -292,6 +300,7 @@ h5 {
   content: "\f105";
 }
 .slick-dots {
+  position: static;
   margin-left: 0;
   margin-right: 0;
 }
@@ -304,6 +313,11 @@ h5 {
 .slick-dots li.slick-active button:before {
   color: #272822;
   opacity: 1;
+}
+.dots-container {
+  text-align: cetner;
+  height: 2em;
+  display: block;
 }
 .content-button-text {
   margin-bottom: 0px;
