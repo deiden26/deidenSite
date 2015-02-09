@@ -10,21 +10,29 @@ document.addEventListener("DOMContentLoaded", function() {
 		appendDots: $(".dots-container"),
 		onBeforeChange: hideExperienceContent
 	});
-	//Initialize cached variables for scroll-fading
+	//Disable fading and parralax for mobile
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		mobile = true;
+		var topImage = document.querySelector(".top-image");
+		topImage.style.backgroundPosition = "scroll";
 	}
-	topImageText = document.querySelector("#top-image-text")
+	else {
+		//Cache reference to top image text for fading
+		topImageText = document.querySelector("#top-image-text")
+		//initialize to proper fade
+		fade();
+	}
 });
 //Response to scrolling that causes top image text to fade
-window.onscroll = function() {
+window.onscroll = fade; 
+function fade() {
 	if(!mobile) {
 		topImageTextOpacity = 1 - (2.5/window.innerHeight) * window.pageYOffset;
-		window.requestAnimationFrame(fade);
+		window.requestAnimationFrame(fadeAnimate);
 	}
 };
-//Fade function
-function fade() {
+//Fade animate function
+function fadeAnimate() {
 	topImageText.style.opacity = topImageTextOpacity;
 };
 //Top bar button scrolling response
