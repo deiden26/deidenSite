@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		mobile = true;
 		var topImage = document.querySelector(".top-image");
-		topImage.style.backgroundPosition = "scroll";
+		topImage.style.backgroundAttachment = "scroll";
 	}
 	else {
 		//Cache reference to top image text for fading
