@@ -55,7 +55,7 @@ function hideExperienceContent(){
 //showHide=false -> only hide
 //showHide=undefined -> toggle
 function toggleExperienceContent(showHide){
-	var contentLabels = ["divit", "shindg", "anser"];
+	var contentLabels = ["anser", "divit", "shindg"];
 	var index = $(".project-carousel").slickCurrentSlide();
 	var target = contentLabels[index];
 	var content = $("#"+target+"-content");

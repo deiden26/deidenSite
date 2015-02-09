@@ -22,7 +22,7 @@ var siteMap = siteMapper.createSitemap({
 	cacheTime: 600000,
 	urls: [
 		{url: '/', changefreq: 'monthly', priority: 1.0},
-		{url: '/documents/resume.pdf', changefreq: 'monthly', priority: 0.9}
+		{url: '/documents/Danny-Eiden-Resume.pdf', changefreq: 'monthly', priority: 0.9}
 	]
 });
 
@@ -36,7 +36,7 @@ app.use(stylus.middleware({
     dest: __dirname + '/public/css'
 }));
 
-app.use(favicon());
+app.use(favicon( __dirname + '/public/images/deidenIcon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());

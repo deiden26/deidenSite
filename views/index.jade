@@ -82,6 +82,21 @@ block content
 				div(class="project-carousel")
 					div()
 						div(class="text-center")
+							h2 ANSER Now
+							img(src="/images/anser.png" class="app-icon" alt="Anser Now App")
+						div(class="row")
+							div(class="small-12 column text-center")
+								a(href="https://play.google.com/store/apps/details?id=edu.northwestern.anser.ANSERNow&hl=en")
+									span(class="fa fa-android fa-2x fa-fw")
+									br
+									div(class="project-source-button-text") Google Play Store
+						p
+							| ANSER Now is a collaborative platform designed to serve the researchers at the Argonne-Northwestern Solar
+							| Energy Research (ANSER) Center. ANSER Now brings the Center’s portfolio of diverse research efforts and
+							| knowledge to the fingertips of its researchers, while providing a mechanism to initiate, capture, and
+							| manage interdisciplinary collaborations.
+					div()
+						div(class="text-center")
 							h2 Divit
 							img(src="/images/divit.png" class="app-icon" alt="Divit App")
 						div(class="row")
@@ -115,25 +130,25 @@ block content
 							| It is all too easy to forget about plans you made a week ago, and it takes too much time to keep up with
 							| the endless group messages where friends make plans. Shindg - the social calendar for college students -
 							| puts all of your plans in one app to keep you effortlessly in the know. Shindg is socializing made easy.
-					div()
-						div(class="text-center")
-							h2 ANSER Now
-							img(src="/images/anser.png" class="app-icon" alt="Anser Now App")
-						div(class="row")
-							div(class="small-12 column text-center")
-								a(href="https://play.google.com/store/apps/details?id=edu.northwestern.anser.ANSERNow&hl=en")
-									span(class="fa fa-android fa-2x fa-fw")
-									br
-									div(class="project-source-button-text") Google Play Store
-						p
-							| ANSER Now is a collaborative platform designed to serve the researchers at the Argonne-Northwestern Solar
-							| Energy Research (ANSER) Center. ANSER Now brings the Center’s portfolio of diverse research efforts and
-							| knowledge to the fingertips of its researchers, while providing a mechanism to initiate, capture, and
-							| manage interdisciplinary collaborations.
 				div(class="text-center")
 					a(onclick="toggleExperienceContent()")
 						p(class="content-button-text") Show My Contributions
 						span(class="fa fa-angle-double-down fa-3x" id="content-arrow")
+				div(class="project-content" id="anser-content")
+					h4(class="roles-title") Roles
+					ul
+						li Programmer
+					h4(class="work-title") Notable Work
+					ul
+						li Contributed to the development of the ANSER Now app
+						li Wrote automated tests for the ANSER Now app using Protractor
+					h4(class="platforms-title") Languages and Platforms
+					p(class="languages-platforms") Languages
+					ul
+						li Javascript, HTML, SCSS 
+					p(class="languages-platforms") Platforms and Tools
+					ul
+						li Ionic, Node.js, AngularJS, Cordova, Protractor, Vagrant, git
 				div(class="project-content" id="divit-content")
 					h4(class="roles-title") Roles
 					ul
@@ -166,21 +181,6 @@ block content
 					p(class="languages-platforms") Platforms and Tools
 					ul
 						li git, Parse, Pixelmater & Gimp
-				div(class="project-content" id="anser-content")
-					h4(class="roles-title") Roles
-					ul
-						li Programmer
-					h4(class="work-title") Notable Work
-					ul
-						li Contributed to codebase of various features for the ANSER Now app
-						li Wrote automated tests for the ANSER Now app using Protractor
-					h4(class="platforms-title") Languages and Platforms
-					p(class="languages-platforms") Languages
-					ul
-						li Javascript, HTML, SCSS 
-					p(class="languages-platforms") Platforms and Tools
-					ul
-						li Ionic, Node.js, AngularJS, Cordova, Protractor, Vagrant, git
 				div(class="dots-container")
 	section(id="testimonials")
 		div(class="row")
@@ -236,7 +236,7 @@ block content
 					span(class="contact-icon fa fa-envelope fa-5x fa-fw")
 					p() deiden.26@gmail.com
 			div(class="small-12 medium-6 large-3 column text-center")
-				a(href="/documents/resume.pdf" download="Danny Eiden Resume #{date}.pdf")
+				a(href="/documents/Danny-Eiden-Resume.pdf" download="Danny Eiden Resume #{date}.pdf")
 					span(class="contact-icon fa fa-file-text fa-5x fa-fw")
 					p() Resume
 			div(class="small-12 medium-6 large-3 column text-center")
