@@ -10,6 +10,11 @@ transition(val)
 	-ms-transition all val ease
 	-o-transition all val ease
 	transition all val ease
+backgroundSize(val)
+	-webkit-background-size: val;
+	-moz-background-size: val;
+	-o-background-size: val;
+	background-size: val;
 
 //Load slick carousel font
 @font-face 
@@ -90,7 +95,7 @@ h5
 		height 100% 
 .top-image
 	display table
-	background-size cover
+	backgroundSize(cover)
 	background-repeat no-repeat
 	background-position center center
 	background-attachment fixed
