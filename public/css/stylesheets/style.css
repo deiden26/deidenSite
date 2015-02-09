@@ -335,6 +335,7 @@ h5 {
 .quotation-content {
   text-indent: 40px;
   margin-top: -20px;
+  margin-bottom: 0px;
 }
 .quotation-source {
   color: #7e8080;
