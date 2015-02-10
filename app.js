@@ -35,7 +35,7 @@ app.use(stylus.middleware({
     dest: __dirname + '/public/css'
 }));
 
-app.use(favicon(__dirname + '/public/images/deidenIcon.ico'));
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
