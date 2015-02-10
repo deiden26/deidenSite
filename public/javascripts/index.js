@@ -50,7 +50,7 @@ function scrollTo(target, closeNav){
 function beforeSlideChange(slick, currentSlide, nextSlide){
 	var currentSlideLabel = contentLabels[currentSlide];
 	var nextSlideLabel = contentLabels[nextSlide];
-	ga('send', 'event', 'button', 'click', 'Project Carousel - ' + currentSlideLabel, 'To - ' + nextSlideLabel);
+	ga('send', 'event', 'Project Carousel - ' + currentSlideLabel, 'click', 'To - ' + nextSlideLabel);
 	//Hide the content of the "My contributions" div
 	toggleExperienceContent(false);
 }
@@ -78,11 +78,11 @@ function toggleExperienceContent(showHide){
 		//Change test
 		if(contentButtonText.text() === "Show My Contributions") {
 			contentButtonText.html("Hide My Contributions");
-			ga('send', 'event', 'button', 'click', 'Project Contributions - ' + target, 'Show');
+			ga('send', 'event', 'Project Contributions - ' + target, 'click', 'Show');
 		}
 		else {
 			contentButtonText.html("Show My Contributions");
-			ga('send', 'event', 'button', 'click', 'Project Contributions - ' + target, 'Hide');
+			ga('send', 'event', 'Project Contributions - ' + target, 'click', 'Hide');
 		}
 
 	}
