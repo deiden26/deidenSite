@@ -8,7 +8,6 @@ var stylus = require('stylus');
 var siteMapper = require('sitemap');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
 
 var app = express();
 
