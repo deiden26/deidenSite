@@ -2,13 +2,15 @@
 var mobile = false;
 var topImageText;
 var topImageTextOpacity;
+//Global variable for carousel content labels
+var contentLabels = ["anser", "divit", "shindg"];
 //Initializer for when the page finishes loading
 document.addEventListener("DOMContentLoaded", function() {
 	//Initialize carousel
 	$('.project-carousel').slick({
 		dots: true,
 		appendDots: $(".dots-container"),
-		onBeforeChange: hideExperienceContent
+		onBeforeChange: beforeSlideChange
 	});
 	//Disable fading and parralax for mobile
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -45,8 +47,11 @@ function scrollTo(target, closeNav){
 	if(closeNav)
 		Foundation.libs.topbar.toggle();
 }
-//Hide the content of the "My contributions" div
-function hideExperienceContent(){
+function beforeSlideChange(slick, currentSlide, nextSlide){
+	var currentSlideLabel = contentLabels[currentSlide];
+	var nextSlideLabel = contentLabels[nextSlide];
+	ga('send', 'event', 'button', 'click', 'Project Carousel - ' + currentSlideLabel, 'To - ' + nextSlideLabel);
+	//Hide the content of the "My contributions" div
 	toggleExperienceContent(false);
 }
 
@@ -55,7 +60,6 @@ function hideExperienceContent(){
 //showHide=false -> only hide
 //showHide=undefined -> toggle
 function toggleExperienceContent(showHide){
-	var contentLabels = ["anser", "divit", "shindg"];
 	var index = $(".project-carousel").slickCurrentSlide();
 	var target = contentLabels[index];
 	var content = $("#"+target+"-content");
@@ -72,10 +76,14 @@ function toggleExperienceContent(showHide){
 		//Add or remove the up arrow
 		$("#content-arrow").toggleClass("fa fa-angle-double-up fa-3x");
 		//Change test
-		if(contentButtonText.text() === "Show My Contributions")
+		if(contentButtonText.text() === "Show My Contributions") {
 			contentButtonText.html("Hide My Contributions");
-		else
+			ga('send', 'event', 'button', 'click', 'Project Contributions - ' + target, 'Show');
+		}
+		else {
 			contentButtonText.html("Show My Contributions");
+			ga('send', 'event', 'button', 'click', 'Project Contributions - ' + target, 'Hide');
+		}
 
 	}
 }
