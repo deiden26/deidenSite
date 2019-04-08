@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 });
 //Response to scrolling that causes top image text to fade
-window.onscroll = fade; 
+window.onscroll = fade;
 function fade() {
 	if(!mobile) {
 		topImageTextOpacity = 1 - (2.5/window.innerHeight) * window.pageYOffset;
@@ -38,7 +38,7 @@ function fadeAnimate() {
 	topImageText.style.opacity = topImageTextOpacity;
 };
 //Top bar button scrolling response
-function scrollTo(target, closeNav){
+function scrollToSection(target, closeNav){
 	//Scroll with animation
 	$('html, body').animate({
 		scrollTop: $(target).offset().top -40
