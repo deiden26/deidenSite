@@ -1,0 +1,264 @@
+extends layout
+
+block content
+    div(class="fixed top-bar-bottom-border")
+        nav(class="top-bar" data-topbar data-options="scrolltop:false" role="navigation")
+            ul(class="title-area")
+                li(class="name")
+                    h1(class="nav-title")
+                        a(href="#" class="nav-title")
+                            img(src="/images/deidenIcon.png" class="nav-logo" alt="Danny Eiden | Developer, Designer, Product Manager")
+                            | Danny Eiden
+                li(class="toggle-topbar menu-icon")
+                    a(href="#")
+                        span
+            section(class="top-bar-section")
+                ul(class="right")
+                    li
+                        a(onclick="scrollToSection('#about', true); ga('send', 'event', 'Navigation', 'click', 'About');") About
+                    li
+                        a(onclick="scrollToSection('#skills', true); ga('send', 'event', 'Navigation', 'click', 'Skills');") Skills
+                    li
+                        a(onclick="scrollToSection('#projects', true); ga('send', 'event', 'Navigation', 'click', 'Projects');") Projects
+                    li
+                        a(onclick="scrollToSection('#testimonials', true); ga('send', 'event', 'Navigation', 'click', 'Testimonials');") Testimonials
+                    li
+                        a(onclick="scrollToSection('#contact', true); ga('send', 'event', 'Navigation', 'click', 'Contact');") Contact
+    // Top Image
+    section(id="top")
+        div(class="top-image")
+            div(id="top-image-text")
+                h5 Great things happen at the intersection of technology and creativity
+        div(class="top-image-mask")
+    section(id="about")
+        div(class="row")
+            div(class="large-12 column")
+                h3 About
+            div(class="small-4 medium-2 large-2 column")
+                img(src="/images/dannyHeadshot.jpg" alt="Danny Eiden")
+            div(class="text")
+                p
+                    | I am Danny Eiden, a developer with an interdisciplinary mind. My goal is
+                    | to combine a deep understanding of computers, people, and businesses to
+                    | create novel products. Throughout my undergraduate career, I have taken classes
+                    | in computer science, marketing, psychology, and the design. Outside of class,
+                    | I have worked as a developer,  a product manager, and founder of a start-up.
+                    | These experiences have given me the tools for whole-brain thinking, and I
+                    | would like to put this unique mindset to work for you.
+        br
+    section(id="skills")
+        div(class="row")
+            div(class="large-12 column")
+                h3 Skills
+            div(class=" large-4 column text padding-1")
+                h4(class="development") Development
+                p
+                    | While I am a well rounded person, development is my core. Since the start
+                    | of my programming career, I have contributed to numerous projects in over ten
+                    | languages. To complete these projects, I have produced polished front-end
+                    | as well as high-performance back-end code. Whatever kind of programmer
+                    | you need, I can deliver.
+            div(class=" large-4 column text")
+                h4(class="design") UX & Design
+                p
+                    | When creating software, the user always comes first. I take great pride
+                    | in being a developer who understands people as well as computers. I aim to
+                    | delight individuals with my work, and I have taken classes in psychology and
+                    | user experience to help me achieve this goal. When your product needs to be beautiful
+                    | in both form and function, I am prepared to make it shine.
+            div(class=" large-4 column text")
+                h4(class="product-management") Product Management
+                p
+                    | It is imperative to have team members who understand business in addition to
+                    | technology. From competitive landscape to LTV:CAC, I like to know everything
+                    | about the products I contribute to. My business classes, internships,
+                    | and experience forming a startup have equipped me to handle the entire breadth
+                    | of challenges that you face when managing a product.
+    section(id="projects")
+        div(class="row")
+            div(class="large-12 column")
+                h3 Projects
+            div(class="large-12 column")
+                div(class="project-carousel")
+                    div()
+                        div(class="text-center")
+                            h2 ANSER Now
+                            img(src="/images/anser.png" class="app-icon" alt="Anser Now App")
+                        div(class="row")
+                            div(class="small-12 column text-center")
+                                a(href="https://play.google.com/store/apps/details?id=edu.northwestern.anser.ANSERNow&hl=en"
+                                onclick="ga('send', 'event', 'Project Source - Anser', 'click', 'Google Play Store');"
+                                target="_blank")
+                                    span(class="fa fa-android fa-2x fa-fw")
+                                    br
+                                    div(class="project-source-button-text") Google Play Store
+                        p
+                            | ANSER Now is a collaborative platform designed to serve the researchers at the Argonne-Northwestern Solar
+                            | Energy Research (ANSER) Center. ANSER Now brings the Center’s portfolio of diverse research efforts and
+                            | knowledge to the fingertips of its researchers, while providing a mechanism to initiate, capture, and
+                            | manage interdisciplinary collaborations.
+                    div()
+                        div(class="text-center")
+                            h2 Divit
+                            img(src="/images/divit.png" class="app-icon" alt="Divit App")
+                        div(class="row")
+                            div(class="small-6 medium-6 column text-center")
+                                a(href="https://itunes.apple.com/us/app/divit/id873875908?mt=8"
+                                onclick="ga('send', 'event', 'Project Source - Divit', 'click', 'Apple App Store');"
+                                target="_blank")
+                                    span(class="fa fa-apple fa-2x fa-fw")
+                                    br
+                                    div(class="project-source-button-text") Apple App Store
+                            div(class="small-6 medium-6 column text-center")
+                                a(href="http://www.divitapp.com"
+                                onclick="ga('send', 'event', 'Project Source - Divit', 'click', 'Website');"
+                                target="_blank")
+                                    span(class="fa fa-laptop fa-2x fa-fw")
+                                    br
+                                    div(class="project-source-button-text") Web
+                        p
+                            | Roommates share things that cost money, but the experience is filled with friction. Dividing expenses is time
+                            | consuming. Obtaining cash to pay back roommates is inconvenient. People lose track of who owes who. Divit
+                            | is the expense splitting app for roommates that addresses all of these problems. With Divit, roommates
+                            | can spend less time swapping money and more time swapping stories.
+                    div()
+                        div(class="text-center")
+                            h2 Shindg
+                            img(src="/images/shindg.png" class="app-icon" alt="Shindg App")
+                        div(class="row")
+                            div(class="small-12 column text-center")
+                                a(href="https://itunes.apple.com/us/app/shindg/id854008976?mt=8"
+                                onclick="ga('send', 'event', 'Project Source - Shindg', 'click', 'Apple App Store');"
+                                target="_blank")
+                                    span(class="fa fa-apple fa-2x fa-fw")
+                                    br
+                                    div(class="project-source-button-text") Apple App Store
+                        p
+                            | In the craziness of college life, managing your social life should never feel like work. But it does.
+                            | It is all too easy to forget about plans you made a week ago, and it takes too much time to keep up with
+                            | the endless group messages where friends make plans. Shindg - the social calendar for college students -
+                            | puts all of your plans in one app to keep you effortlessly in the know. Shindg is socializing made easy.
+                div(class="text-center")
+                    a(onclick="toggleExperienceContent()")
+                        p(class="content-button-text") Show My Contributions
+                        span(class="fa fa-angle-double-down fa-3x" id="content-arrow")
+                div(class="project-content" id="anser-content")
+                    h4(class="roles-title") Roles
+                    ul
+                        li Programmer
+                    h4(class="work-title") Notable Work
+                    ul
+                        li Contributed to the development of the ANSER Now app
+                        li Wrote automated tests for the ANSER Now app using Protractor
+                    h4(class="platforms-title") Languages and Platforms
+                    p(class="languages-platforms") Languages
+                    ul
+                        li Javascript, HTML, SCSS
+                    p(class="languages-platforms") Platforms and Tools
+                    ul
+                        li Ionic, Node.js, AngularJS, Cordova, Protractor, Vagrant, git
+                div(class="project-content" id="divit-content")
+                    h4(class="roles-title") Roles
+                    ul
+                        li Founder, programmer, product manager, designer
+                    h4(class="work-title") Notable Work
+                    ul
+                        li Developed and designed Divit for iOS, Android, and Web ­ helping roughly 200 users divide their costs
+                        li Formed a business plan for Divit following Steve Blank's Customer Development model
+                        li Wrote, designed, and presented a pitch for 24 investors
+                        li Created RESTful API for a new version of Divit using Sails.js
+                    h4(class="platforms-title") Languages and Platforms
+                    p(class="languages-platforms") Languages
+                    ul
+                        li Objective C, Javascript, HTML, CSS
+                    p(class="languages-platforms") Platforms and Tools
+                    ul
+                        li Node.js, Express, Sails.js, Mixpanel, git, Pixelmater & Gimp
+                div(class="project-content" id="shindg-content")
+                    h4(class="roles-title") Roles
+                    ul
+                        li Founder, programmer, product manager, designer
+                    h4(class="work-title") Notable Work
+                    ul
+                        li Developed and designed Shindg for iOS
+                        li Presented a pitch for 24 investors
+                    h4(class="platforms-title") Languages and Platforms
+                    p(class="languages-platforms") Languages
+                    ul
+                        li Objective C
+                    p(class="languages-platforms") Platforms and Tools
+                    ul
+                        li git, Parse, Pixelmater & Gimp
+                div(class="dots-container")
+    section(id="testimonials")
+        div(class="row")
+            div(class="large-12 column")
+                h3 Testimonials
+                div(class="quote-and-pic")
+                    div(class="small-4 medium-2 large-2 column")
+                        img(src="/images/marascoHeadshot.png" alt="Michael Marasco")
+                    div
+                        span(class="blue-quotation-mark fa fa-quote-left fa-2x")
+                        p(class="quotation-content")
+                            | Danny is an example of a student I love to work with. His curiosity,  passion,
+                            | work ethic, and positive demeanor come through in anything he does. Danny has
+                            | evolved as a developer, business person and overall person during his time here
+                            | at Northwestern. I know he will have high impact once he leaves us in whatever
+                            | he choses to do. I am a lifetime member of Danny's fan club.
+                p(class="blue-quotation-source")
+                    | Michael Marasco, Director of the Farley Center for Entrepreneruship and Innovation
+                br
+                div(class="quote-and-pic")
+                    div(class="small-4 medium-2 large-2 column")
+                        img(src="/images/rodolfoHeadshot.jpg" alt="Rodolfo Vieira")
+                    div
+                        span(class="green-quotation-mark fa fa-quote-left fa-2x")
+                        p(class="quotation-content")
+                            | It has been my pleasure to work with Danny as his supervisor at Northwestern University's
+                            | NUX Studio. We have worked together on various fronts, including automated testing and
+                            | mobile apps. He is highly talented, has a strong work ethic, learns very quickly on the
+                            | spot, and is a great communicator. I recommend him highly.
+                p(class="green-quotation-source")
+                    | Rodolfo Vieira, Developer for Northwestern University's Advanced Media Production Studio
+                br
+                div(class="quote-and-pic")
+                    div(class="small-4 medium-2 large-2 column")
+                        img(src="/images/sephenHeadshot.jpg" alt="Stephen Chan")
+                    div
+                        span(class="red-quotation-mark fa fa-quote-left fa-2x")
+                        p(class="quotation-content")
+                            | Danny's excellent organization and communication skills allowed him to be an
+                            | effective moderator between our technology and business focused team members.
+                            | In addition to this, he quickly picked up the languages and frameworks we used
+                            | and made key development contributions.
+                p(class="red-quotation-source")
+                    | Stephen Chan, Co-founder and Developer for Divit and Shindg
+        br
+    section(id="contact")
+        div(class="row")
+            div(class="large-12 column")
+                h3 Contact
+                br
+            div(class="small-12 medium-6 large-3 column text-center")
+                a(href="mailto:deiden.26@gmail.com"
+                onclick="ga('send', 'event', 'Contact', 'click', 'Email');")
+                    span(class="contact-icon fa fa-envelope fa-5x fa-fw")
+                    p() deiden.26@gmail.com
+            div(class="small-12 medium-6 large-3 column text-center")
+                a(href="/documents/Danny-Eiden-Resume.pdf" download=`Danny Eiden Resume ${date}.pdf`
+                onclick="ga('send', 'event', 'Contact', 'click', 'Resume');")
+                    span(class="contact-icon fa fa-file-text fa-5x fa-fw")
+                    p() Resume
+            div(class="small-12 medium-6 large-3 column text-center")
+                a(href="http://www.linkedin.com/in/DannyEiden"
+                onclick="ga('send', 'event', 'Contact', 'click', 'Linkedin');"
+                target="_blank")
+                    span(class="contact-icon fa fa-linkedin fa-5x fa-fw")
+                    p() Linkedin
+            div(class="small-12 medium-6 large-3 column text-center contact-icon")
+                a(href="http://www.github.com/deiden26"
+                onclick="ga('send', 'event', 'Contact', 'click', 'GitHub');"
+                target="_blank")
+                    span(class="fa fa-github fa-5x fa-fw")
+                    p() GitHub
+    script(src="/javascripts/index.js")
