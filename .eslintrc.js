@@ -1,7 +1,6 @@
 module.exports = {
     "env": {
         "node": true,
-        "commonjs": true,
         "es6": true
     },
     "extends": "google",
@@ -10,7 +9,7 @@ module.exports = {
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 2018
+        "ecmaVersion": 6,
     },
     "rules": {
         "require-jsdoc": "off",
