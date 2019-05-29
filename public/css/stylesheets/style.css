@@ -49,6 +49,9 @@ h5 {
   padding-left: 15px;
   padding-right: 15px;
 }
+.center {
+  text-align: center;
+}
 .top-bar {
   background: #454545;
 }
@@ -223,6 +226,15 @@ h5 {
 #about {
   background-color: #323230;
 }
+.headshot {
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+@media (max-width: 640px) {
+  .headshot {
+    width: 50%;
+  }
+}
 #skills {
   background-color: #272822;
 }
@@ -237,126 +249,6 @@ h5 {
 .product-management {
   color: #ff5925;
   text-align: center;
-}
-#projects {
-  background-color: #323230;
-}
-.project-carousel {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.app-icon {
-  width: 30%;
-  max-width: 200px;
-  padding-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.project-content {
-  display: none;
-}
-.project-source-button-text {
-  margin-bottom: 10px;
-}
-.roles-title {
-  color: #6985ff;
-}
-.work-title {
-  color: #91cc5d;
-}
-.platforms-title {
-  color: #ff5925;
-}
-.languages-platforms {
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 0;
-}
-.slick-slider {
-  margin-bottom: 0;
-}
-.slick-prev,
-.slick-next {
-  height: 50px;
-}
-.slick-prev:before,
-.slick-next:before {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  font-size: 50px;
-  font-family: FontAwesome;
-  color: #999;
-}
-.slick-prev:hover:before,
-.slick-next:hover:before,
-.slick-prev:focus:before,
-.slick-next:focus:before {
-  color: #fff;
-}
-.slick-prev:before {
-  content: "\f104";
-}
-.slick-next:before {
-  content: "\f105";
-}
-.slick-dots {
-  position: static;
-  margin-left: 0;
-  margin-right: 0;
-}
-.slick-dots li button:before {
-  text-shadow: 1px 1px 1px #666, -1px -1px 1px #111;
-  font-size: 10px;
-  color: #272822;
-  opacity: 0.6;
-}
-.slick-dots li.slick-active button:before {
-  color: #272822;
-  opacity: 1;
-}
-.dots-container {
-  text-align: cetner;
-  height: 2em;
-  display: block;
-}
-.content-button-text {
-  margin-bottom: 0px;
-}
-#testimonials {
-  background-color: #272822;
-}
-.quote-and-pic {
-  display: inline-block;
-  margin-bottom: 10px;
-}
-.quotation-content {
-  text-indent: 40px;
-  margin-top: -20px;
-  margin-bottom: 0px;
-}
-.quotation-source {
-  color: #7e8080;
-}
-.blue-quotation-mark {
-  color: #6985ff;
-}
-.blue-quotation-source {
-  color: #6985ff;
-}
-.green-quotation-mark {
-  color: #91cc5d;
-}
-.green-quotation-source {
-  color: #91cc5d;
-}
-.red-quotation-mark {
-  color: #ff5925;
-}
-.red-quotation-source {
-  color: #ff5925;
 }
 #contact {
   background-color: #323230;
